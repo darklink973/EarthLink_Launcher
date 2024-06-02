@@ -3,7 +3,7 @@ const { DistributionAPI } = require('helios-core/common')
 const ConfigManager = require('./configmanager')
 
 //exports.REMOTE_DISTRO_URL = 'https://helios-files.geekcorner.eu.org/distribution.json'
-exports.REMOTE_DISTRO_URL = 'http://www.earthlink-minecraft.fr/earthLink_update_point/distribution.json'
+exports.REMOTE_DISTRO_URL = 'http://earthlink-minecraft.fr/launcher_update/distribution.json'
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
