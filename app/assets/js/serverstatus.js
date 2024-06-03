@@ -3,7 +3,7 @@ const net = require('net')
 /**
  * Retrieves the status of a minecraft server.
  * 
- * @param {http://earthlink.serveminecraft.net} address The server address.
+ * @param {http://www.earthlink-minecraft.fr} address The server address.
  * @param {number} port Optional. The port of the server. Defaults to 25565.
  * @returns {Promise.<Object>} A promise which resolves to an object containing
  * status information.
