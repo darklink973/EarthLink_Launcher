@@ -1183,7 +1183,7 @@ body, button {
 /* Right hand side of the settings container, for tabs. */
 #settingsContainerRight {
     height: 100%;
-    width: 75%;
+    width: 50%;
     box-sizing: border-box;
 }
 

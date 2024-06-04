@@ -11,7 +11,7 @@ mediaYouTubeURL = "#"
 mediaDiscordURL = "https://discord.gg/QDykKMpf74"
 
 [ejs.settings]
-sourceGithubLink = "https://github.com/dscalZi/HeliosLauncher"
+sourceGithubLink = "https://github.com/darklink973/EarthLinkLauncher/"
 supportLink = "https://github.com/darklink973/EarthLinkLauncher/issues"
 
 [ejs.welcome]
