@@ -3026,13 +3026,12 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Social media icon content container. */
 #mediaContent {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     margin-top: -50px;
     height: calc(100% - 95px);
     width: 0px;
-    align-items: right;
 }
 
 /* Social Media Icon division containers. */
@@ -3159,10 +3158,6 @@ input:checked + .toggleSwitchSlider:before {
     margin-left: 20px;
     margin-right: 20px;
 }
-
-/* * *
-* Landing View (Bottom Styles) | Left Content
-* * */
 
 /* Maintains maximum width on the status bar. */
 #server_status_wrapper {
