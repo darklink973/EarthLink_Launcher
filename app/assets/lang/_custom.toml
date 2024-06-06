@@ -5,9 +5,6 @@ title = "EarthLink Launcher"
 
 [ejs.landing]
 mediaGitHubURL = "https://github.com/darklink973/EarthLinkLauncher"
-mediaTwitterURL = "#"
-mediaInstagramURL = "#"
-mediaYouTubeURL = "#"
 mediaDiscordURL = "https://discord.gg/QDykKMpf74"
 
 [ejs.settings]
