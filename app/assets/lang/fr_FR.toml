@@ -195,7 +195,7 @@ downloadingFiles = "Téléchargement des fichiers..."
 errorDuringFileDownloadTitle = "Erreur lors du Téléchargement"
 preparingToLaunch = "Prépartion du lancement..."
 launchingGame = "Lancement du jeu..."
-launchWrapperNotDownloaded = "The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">submit an issue</a> and let us know what antivirus software you use. We'll contact them and try to straighten things out."
+launchWrapperNotDownloaded = "The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href=\"https://github.com/darklink973/EarthLinkLauncher\">submit an issue</a> and let us know what antivirus software you use. We'll contact them and try to straighten things out."
 doneEnjoyServer = "Fini, bon jeu !"
 checkConsoleForDetails = "Regardez la console (CTRL + Shift + i) pour plus de détails."
 
