@@ -1,4 +1,4 @@
-appId: 'earthlinklauncher'
+appId: 'earthlink_launcher'
 productName: 'EarthLink Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 

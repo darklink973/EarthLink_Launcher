@@ -213,7 +213,7 @@ checking = "Recherche..."
 [js.landing.discord]
 loading = "Loading game..."
 joining = "Connecté(e) et prêt(e) a combattre !"
-joined = "A la bataille !"
+joined = ""
 
 [js.overlay]
 dismiss = "Dismiss"

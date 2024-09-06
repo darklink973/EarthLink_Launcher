@@ -21,7 +21,7 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = Lang.quer
         smallImageKey: genSettings.smallImageKey,
         smallImageText: genSettings.smallImageText,
         startTimestamp: new Date().getTime(),
-        instance: false
+        instance: true
     }
 
     client.on('ready', () => {
