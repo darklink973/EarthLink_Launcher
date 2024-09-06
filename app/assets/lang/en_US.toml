@@ -208,12 +208,12 @@ doneEnjoyServer = "Done. Enjoy the server!"
 checkConsoleForDetails = "Please check the console (CTRL + Shift + i) for more details."
 
 [js.landing.news]
-checking = "Checking for News"
+checking = "Recherche..."
 
 [js.landing.discord]
-loading = "Loading game.."
-joining = "Sailing to Westeros!"
-joined = "Exploring the Realm!"
+loading = "Loading game..."
+joining = "Connecté(e) et prêt(e) a combattre !"
+joined = "A la bataille !"
 
 [js.overlay]
 dismiss = "Dismiss"

@@ -12,6 +12,6 @@ sourceGithubLink = "https://github.com/darklink973/EarthLinkLauncher/"
 supportLink = "https://github.com/darklink973/EarthLinkLauncher/issues"
 
 [ejs.welcome]
-welcomeHeader = "Bienvenue sur mon serveur !"
-welcomeDescription = "EarthLink est un serveur semi rp. Le but est simple, CONQUERIR !"
+welcomeHeader = "Bienvenue sur Earthlink !"
+welcomeDescription = "EarthLink est un serveur semi rp. Le but est simple, conquerir le monde !"
 welcomeDescCTA = "Vous y êtes presque !"
