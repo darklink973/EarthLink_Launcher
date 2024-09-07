@@ -180,9 +180,9 @@ document.addEventListener('readystatechange', function () {
         //170.8
         //53.21
         // Bind progress bar length to length of bot wrapper
-        //const targetWidth = document.getElementById("launch_content").getBoundingClientRect().width
-        //const targetWidth2 = document.getElementById("server_selection").getBoundingClientRect().width
-        //const targetWidth3 = document.getElementById("launch_button").getBoundingClientRect().width
+        const targetWidth = document.getElementById("launch_content").getBoundingClientRect().width
+        const targetWidth2 = document.getElementById("server_selection").getBoundingClientRect().width
+        const targetWidth3 = document.getElementById("launch_button").getBoundingClientRect().width
 
         document.getElementById('launch_details').style.maxWidth = 266.01
         document.getElementById('launch_progress').style.width = 170.8
