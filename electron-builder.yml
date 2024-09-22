@@ -45,7 +45,6 @@ linux:
   description: ''
   category: 'Game'
 
-
 directories:
   buildResources: 'build'
   output: 'dist'
