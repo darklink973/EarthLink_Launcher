@@ -2,7 +2,7 @@ appId: 'earthlink_launcher'
 productName: 'EarthLink Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2024 Daniel Scalzi'
+copyright: 'Copyright © 2018-2024 Daniel Scalzi, 2024 Darkvox'
 
 asar: true
 compression: 'maximum'

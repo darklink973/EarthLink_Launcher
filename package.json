@@ -1,9 +1,9 @@
 {
   "name": "earthlink_launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "productName": "Earthlink Launcher",
   "description": "A modded minecraft launcher for my server based on the work of dscalzi",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/), Darkvox (https://github.com/darklink973/)",
+  "author": "Darkvox (https://github.com/darklink973/), Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "MIT",
   "homepage": "https://github.com/darklink973/EarthLinkLauncher",
   "bugs": {
