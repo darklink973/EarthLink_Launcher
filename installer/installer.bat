@@ -9,4 +9,7 @@ winget install Git.Git
 echo Installation de EarthLink...
 git clone https://github.com/darklink973/EarthLink_Launcher C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher
 cd C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher
+
+xcopy /s C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\EarthLink_Launcher.lnk C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
+
 npm i && echo Nettoyage... && del "C:\temp\node-v20.18.2-x64.msi"
