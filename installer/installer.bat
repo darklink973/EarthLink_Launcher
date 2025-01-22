@@ -15,7 +15,7 @@ xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earth
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher.lnk C:\Users\%USERNAME%\Desktop
 
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater
-xcopy /s /y C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\installer\updater.exe C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
+xcopy /s /y C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\installer.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\updater.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
