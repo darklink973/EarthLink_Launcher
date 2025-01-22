@@ -1,9 +1,35 @@
 @echo off
 
+:: BatchGotAdmin
+:-------------------------------------
+REM  --> Check for permissions
+    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+)
+
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    goto UACPrompt
+) else ( goto gotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params= %*
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+
 echo Installation des dependances...
-mkdir "C:/temp"
-powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi -OutFile C:\temp\node-v20.18.2-x64.msi"
-msiexec /i "C:\temp\node-v20.18.2-x64.msi"
+powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi -OutFile %temp%\node-v20.18.2-x64.msi"
+msiexec /i "%temp%\node-v20.18.2-x64.msi"
 winget install Git.Git
 
 echo Installation de EarthLink...
@@ -15,11 +41,11 @@ xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earth
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher.lnk C:\Users\%USERNAME%\Desktop
 
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater
-xcopy /s /y C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
+xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\updater.exe C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\installer.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\updater.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher_Updater.lnk C:\"ProgramData"\"Microsoft"\"Windows"\"Start Menu"\"Programs"\"EarthLink"\
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher_Updater.lnk C:\Users\%USERNAME%\Desktop
 
-npm i && echo Nettoyage... && del "C:\temp\node-v20.18.2-x64.msi" && rmdir /S /Q "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\"
+npm i && echo Nettoyage... && del "%temp%\node-v20.18.2-x64.msi" && rmdir /S /Q "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\"
