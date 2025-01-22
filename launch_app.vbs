@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "launch_app.bat",0,True
+CreateObject("Wscript.Shell").Run "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\launch_app.bat",0,True
