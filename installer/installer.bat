@@ -21,5 +21,4 @@ xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\updat
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher_Updater.lnk C:\"ProgramData"\"Microsoft"\"Windows"\"Start Menu"\"Programs"\"EarthLink"\
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher_Updater.lnk C:\Users\%USERNAME%\Desktop
 
-npm i && echo Nettoyage... && del "C:\temp\node-v20.18.2-x64.msi"
-@REM  && rmdir /S /Q "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\"
+npm i && echo Nettoyage... && del "C:\temp\node-v20.18.2-x64.msi" && rmdir /S /Q "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\"
