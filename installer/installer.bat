@@ -1,7 +1,8 @@
 @echo off
 
 echo Installation des dependances...
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi', 'C:\temp\node-v20.18.2-x64.msi')"
+mkdir "C:/temp"
+powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi -OutFile C:\temp\node-v20.18.2-x64.msi"
 msiexec /i "C:\temp\node-v20.18.2-x64.msi"
 winget install Git.Git
 
@@ -14,7 +15,7 @@ xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earth
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher.lnk C:\Users\%USERNAME%\Desktop
 
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater
-xcopy /s /y C:\Users\cyl13\Documents\GitHub\EarthLink_Launcher\installer\updater.exe C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
+xcopy /s /y C:\Users\%USERNAME%\Documents\GitHub\EarthLink_Launcher\installer\updater.exe C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\
 mkdir C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\installer.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\updater.bat C:\Users\%USERNAME%\AppData\Local\Earthlink_Launcher_Updater\debug
