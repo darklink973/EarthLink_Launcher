@@ -1,9 +1,9 @@
 @echo off
 
-echo Installation des dependances...
-powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi -OutFile %temp%\node-v20.18.2-x64.msi"
-msiexec /i "%temp%\node-v20.18.2-x64.msi"
-winget install Git.Git
+@REM echo Installation des dependances...
+@REM powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v20.18.2/node-v20.18.2-x64.msi -OutFile %temp%\node-v20.18.2-x64.msi"
+@REM msiexec /i "%temp%\node-v20.18.2-x64.msi"
+@REM winget install Git.Git
 
 echo Installation de EarthLink...
 git clone https://github.com/darklink973/EarthLink_Launcher C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher
@@ -22,3 +22,4 @@ xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earth
 xcopy /s /y C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\Earthlink_Launcher_Updater.lnk C:\Users\%USERNAME%\Desktop
 
 npm i && echo Nettoyage... && del "%temp%\node-v20.18.2-x64.msi" && rmdir /S /Q "C:\Users\%USERNAME%\AppData\Local\EarthLink_Launcher\installer\"
+PAUSE
