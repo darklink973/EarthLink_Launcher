@@ -17,16 +17,21 @@ TargetName=%TargetName%
 FriendlyName=%FriendlyName%
 AppLaunched=%AppLaunched%
 PostInstallCmd=%PostInstallCmd%
-AdminQuietInstCmd=1
+AdminQuietInstCmd=%AdminQuietInstCmd%
 UserQuietInstCmd=%UserQuietInstCmd%
 SourceFiles=SourceFiles
 [Strings]
-InstallPrompt=This package will install nodejs and git to your machine. Do you still want to continue ?
+InstallPrompt=N'oubliez pas de ouvrir l'installation en mode administrateur. This package will install nodejs and git to your machine. Do you still want to continue ?
 DisplayLicense=
 FinishMessage=
-TargetName=C:\Users\cyl13\Desktop\calculator\EarthLink_Launcher\installer\Earthlink_Installer.exe
+TargetName=C:\Users\cyl13\Documents\GitHub\EarthLink_Launcher\installer\Earthlink_Installer.exe
 FriendlyName=Earthlink
 AppLaunched=cmd /c installer.bat
 PostInstallCmd=<None>
 AdminQuietInstCmd=
 UserQuietInstCmd=
+FILE0="installer.bat"
+[SourceFiles]
+SourceFiles0=C:\Users\cyl13\Documents\GitHub\EarthLink_Launcher\installer\
+[SourceFiles0]
+%FILE0%=
